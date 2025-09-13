@@ -13,9 +13,11 @@ export function HeroSection() {
         </p>
         <WistiaPlayer />
         <div className="mt-12">
-          <CtaButton>
-            QUERO ACESSAR O MATERIAL
-          </CtaButton>
+          <a href="#oferta">
+            <CtaButton>
+              QUERO ACESSAR O MATERIAL
+            </CtaButton>
+          </a>
         </div>
       </div>
     </section>

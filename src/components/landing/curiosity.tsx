@@ -7,9 +7,11 @@ export function CuriositySection() {
         <h2 className="font-headline text-2xl md:text-4xl font-bold text-foreground mb-10 max-w-3xl mx-auto">
           VOCÊ TEM CORAGEM DE DESCOBRIR TODA A VERDADE POR TRÁS DOS SÍMBOLOS E MISTÉRIOS DA MATRIX?
         </h2>
-        <CtaButton>
-          QUERO ACESSAR O MATERIAL
-        </CtaButton>
+        <a href="#oferta">
+          <CtaButton>
+            QUERO ACESSAR O MATERIAL
+          </CtaButton>
+        </a>
       </div>
     </section>
   );
