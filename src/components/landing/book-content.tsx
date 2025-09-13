@@ -1,15 +1,25 @@
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { 
+  Sparkles, 
+  Sigma, 
+  TreeDeciduous, 
+  Magnet, 
+  FlaskConical, 
+  Shapes, 
+  Users, 
+  BrainCircuit 
+} from "lucide-react";
 
 const bookContents = [
-  "Os 7 Chakras e como ativá-los",
-  "Símbolos sagrados e seu poder oculto",
-  "Introdução à Cabala e à Árvore da Vida",
-  "Princípios da Lei da Atração e Manifestação",
-  "Alquimia: A transformação da consciência",
-  "Geometria Sagrada e os padrões do universo",
-  "O poder dos arquétipos e do inconsciente coletivo",
-  "Técnicas de meditação para expansão da mente",
+  { text: "Os 7 Chakras e como ativá-los", icon: Sparkles },
+  { text: "Símbolos sagrados e seu poder oculto", icon: Sigma },
+  { text: "Introdução à Cabala e à Árvore da Vida", icon: TreeDeciduous },
+  { text: "Princípios da Lei da Atração e Manifestação", icon: Magnet },
+  { text: "Alquimia: A transformação da consciência", icon: FlaskConical },
+  { text: "Geometria Sagrada e os padrões do universo", icon: Shapes },
+  { text: "O poder dos arquétipos e do inconsciente coletivo", icon: Users },
+  { text: "Técnicas de meditação para expansão da mente", icon: BrainCircuit },
 ];
 
 export function BookContentSection() {
@@ -37,8 +47,12 @@ export function BookContentSection() {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {bookContents.map((content, index) => (
-                <div key={index} className="bg-card p-4 rounded-lg shadow-md hover:bg-card/70 transition-colors">
-                  <p className="font-semibold text-card-foreground">{content}</p>
+                <div 
+                  key={index} 
+                  className="bg-gradient-to-br from-card/80 to-card/50 p-4 rounded-lg shadow-md hover:shadow-primary/20 border border-transparent hover:border-primary/30 transition-all flex items-center gap-4"
+                >
+                  <content.icon className="h-8 w-8 text-primary flex-shrink-0" />
+                  <p className="font-semibold text-card-foreground">{content.text}</p>
                 </div>
               ))}
             </div>
