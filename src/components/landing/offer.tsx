@@ -22,7 +22,7 @@ export function OfferSection() {
             <p className="text-muted-foreground text-xl line-through">De R$97,00</p>
             <p className="text-foreground">por apenas</p>
             <p className="text-5xl md:text-7xl font-bold text-accent my-2">R$19,90</p>
-            <Badge variant="destructive" className="animate-pulse">Acesso Vitalício</Badge>
+            <Badge variant="secondary" className="border-accent/50">Acesso Vitalício</Badge>
           </div>
           <div className="bg-background/50 rounded-lg p-6 mb-8">
             <h3 className="font-bold text-lg mb-4 text-center">Você vai receber:</h3>
