@@ -12,9 +12,9 @@ export function SymbolCarousel() {
   const symbolImages = PlaceHolderImages.filter(img => img.id.startsWith('symbol-carousel'));
 
   return (
-    <section className="w-full py-20 md:py-28">
+    <section className="w-full py-24 md:py-32">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="font-headline text-2xl md:text-4xl font-bold text-foreground mb-4">
+        <h2 className="font-headline text-2xl md:text-4xl font-bold text-foreground mb-4 bg-gradient-to-r from-primary to-purple-400 text-gradient">
           Aposto que você já viu esses símbolos...
         </h2>
         <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">

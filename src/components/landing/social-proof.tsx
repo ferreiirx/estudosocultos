@@ -15,9 +15,9 @@ export function SocialProofSection() {
   const testimonialImages = PlaceHolderImages.filter(img => img.id.startsWith('testimonial-'));
 
   return (
-    <section className="w-full py-20 md:py-28 bg-background/80">
+    <section className="w-full py-24 md:py-32 bg-card/20">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground mb-4 bg-gradient-to-r from-primary to-accent text-gradient">
           Junte-se a mais de 14.000 Mentes Despertas
         </h2>
         <p className="text-lg text-muted-foreground mb-8">

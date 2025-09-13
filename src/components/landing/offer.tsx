@@ -12,14 +12,14 @@ const includedItems = [
 
 export function OfferSection() {
   return (
-    <section id="oferta" className="w-full py-20 md:py-28">
+    <section id="oferta" className="w-full py-24 md:py-32">
       <div className="container mx-auto px-4">
-        <Card className="relative max-w-3xl mx-auto bg-gradient-to-br from-card to-card/60 p-8 rounded-2xl shadow-2xl border-primary/50 overflow-hidden">
+        <Card className="relative max-w-3xl mx-auto bg-gradient-to-br from-card to-card/60 p-8 md:p-12 rounded-2xl shadow-2xl border-primary/50 overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full bg-primary/10 blur-[100px] -z-10"></div>
-           <div className="absolute -top-1/2 -right-1/2 w-full h-full rounded-full bg-primary/20 blur-[150px] animate-pulse -z-10"></div>
-           <div className="absolute -bottom-1/2 -left-1/2 w-full h-full rounded-full bg-accent/20 blur-[150px] animate-pulse animation-delay-3000 -z-10"></div>
+           <div className="absolute -top-1/2 -right-1/2 w-full h-full rounded-full bg-primary/20 blur-[150px] -z-10"></div>
+           <div className="absolute -bottom-1/2 -left-1/2 w-full h-full rounded-full bg-accent/20 blur-[150px] -z-10"></div>
           
-          <h2 className="font-headline text-center text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-headline text-center text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent text-gradient">
             Oferta Especial por Tempo Limitado
           </h2>
           <div className="text-center mb-6">
@@ -29,7 +29,7 @@ export function OfferSection() {
             <Badge variant="secondary" className="border-accent/50 bg-accent/10 text-accent">Acesso Vitalício</Badge>
           </div>
           <div className="bg-background/50 rounded-lg p-6 mb-8 border border-border">
-            <h3 className="font-bold text-lg mb-4 text-center">Você vai receber:</h3>
+            <h3 className="font-bold text-lg mb-4 text-center text-primary">Você vai receber:</h3>
             <ul className="space-y-3">
               {includedItems.map(item => (
                 <li key={item} className="flex items-center">

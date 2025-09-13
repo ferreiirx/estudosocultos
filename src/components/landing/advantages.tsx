@@ -15,11 +15,11 @@ export function AdvantagesSection() {
   const image = PlaceHolderImages.find(img => img.id === 'advantages-image');
 
   return (
-    <section className="w-full py-20 md:py-28">
+    <section className="w-full py-24 md:py-32">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground mb-8">
+            <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground mb-8 bg-gradient-to-r from-primary to-purple-400 text-gradient">
               O Que Você Irá Desbloquear
             </h2>
             <ul className="space-y-4">
@@ -39,7 +39,7 @@ export function AdvantagesSection() {
                 width={500}
                 height={500}
                 data-ai-hint={image.imageHint}
-                className="rounded-lg shadow-2xl object-cover"
+                className="rounded-lg shadow-2xl shadow-primary/20 object-cover"
               />
             )}
           </div>

@@ -31,9 +31,9 @@ const faqs = [
 
 export function FaqSection() {
   return (
-    <section className="w-full py-20 md:py-28 bg-background/80">
+    <section className="w-full py-24 md:py-32 bg-card/20">
       <div className="container mx-auto px-4 max-w-3xl">
-        <h2 className="font-headline text-center text-3xl md:text-4xl font-bold text-foreground mb-12">
+        <h2 className="font-headline text-center text-3xl md:text-4xl font-bold text-foreground mb-12 bg-gradient-to-r from-primary to-accent text-gradient">
           Perguntas Frequentes
         </h2>
         <Accordion type="single" collapsible className="w-full">
