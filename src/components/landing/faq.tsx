@@ -4,7 +4,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { FaqAi } from "./faq-ai";
 
 const faqs = [
   {
@@ -46,7 +45,6 @@ export function FaqSection() {
             </AccordionItem>
           ))}
         </Accordion>
-        <FaqAi />
       </div>
     </section>
   );
