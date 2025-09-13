@@ -69,16 +69,16 @@ export function SocialProofSection() {
           plugins={[
             Autoplay({
               delay: 3000,
-              stopOnInteraction: true,
+              stopOnInteraction: false,
               stopOnMouseEnter: true,
             }),
           ]}
           className="w-full max-w-4xl mx-auto"
         >
-          <CarouselContent>
+          <CarouselContent className="-ml-2 md:-ml-4">
             {testimonialImages.map((image) => (
-              <CarouselItem key={image.id} className="basis-full md:basis-1/2 lg:basis-1/3">
-                <div className="p-2">
+              <CarouselItem key={image.id} className="basis-full md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                <div className="p-1">
                   <Image
                     src={image.imageUrl}
                     alt={image.description}
@@ -94,12 +94,13 @@ export function SocialProofSection() {
           <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10" />
           <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10" />
         </Carousel>
-        <div className="py-4 flex justify-center gap-2">
+        <div className="py-4 flex justify-center items-center gap-3">
             {Array.from({ length: count }).map((_, i) => (
               <button
                 key={i}
                 onClick={() => scrollTo(i)}
-                className={`h-2 w-2 rounded-full transition-all ${current -1 === i ? 'w-4 bg-primary' : 'bg-primary/50'}`}
+                className={`h-2 rounded-full transition-all duration-300 ${current -1 === i ? 'w-8 bg-primary' : 'w-4 bg-primary/50'}`}
+                aria-label={`Go to slide ${i + 1}`}
               />
             ))}
         </div>
