@@ -42,14 +42,14 @@ export function SocialProofSection() {
           plugins={[
             Autoplay({
               delay: 3000,
-              stopOnInteraction: true,
+              stopOnInteraction: false,
             }),
           ]}
           className="w-full max-w-4xl mx-auto"
         >
           <CarouselContent>
             {testimonialImages.map((image) => (
-              <CarouselItem key={image.id} className="md:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={image.id} className="basis-full md:basis-1/2 lg:basis-1/3">
                 <div className="p-2">
                   <Image
                     src={image.imageUrl}
@@ -63,8 +63,10 @@ export function SocialProofSection() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <div className="hidden md:block">
+            <CarouselPrevious />
+            <CarouselNext />
+          </div>
         </Carousel>
       </div>
     </section>
