@@ -62,11 +62,11 @@ export function StorySection() {
               <span className="font-bold bg-gradient-to-r from-cyan-400 to-blue-500 text-gradient">
                 TAIN
               </span>
-              <span className="text-foreground/70">ment (prender sua </span>
-              <span className="font-bold bg-gradient-to-r from-purple-400 to-primary text-gradient">
-                MENTE
+              <span className="text-foreground/70">ment (</span>
+              <span className="font-bold bg-gradient-to-r from-cyan-400 to-blue-500 text-gradient">
+                PRENDER
               </span>
-              <span className="text-foreground/70">)</span>
+              <span className="text-foreground/70"> sua mente)</span>
             </p>
             <p>
               <span className="text-foreground/70">Civil</span>
