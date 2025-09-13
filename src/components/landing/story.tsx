@@ -26,23 +26,31 @@ export function StorySection() {
            <div className="space-y-4 font-mono tracking-wider text-left bg-card/50 p-6 rounded-lg border border-border max-w-md mx-auto text-lg">
               <p>
                 <span className="text-foreground/70">Tele</span>
-                <span className="text-red-400 font-bold bg-gradient-to-r from-red-500 to-red-400 text-gradient">LIE</span>
-                <span className="text-foreground/70">vision (tele-MENTIRA-visão)</span>
+                <span className="font-bold bg-gradient-to-r from-red-500 to-red-400 text-gradient">LIE</span>
+                <span className="text-foreground/70">vision (tele-</span>
+                <span className="font-bold bg-gradient-to-r from-red-500 to-red-400 text-gradient">MENTIRA</span>
+                <span className="text-foreground/70">-visão)</span>
               </p>
               <p>
                 <span className="text-foreground/70">Govern</span>
                 <span className="font-bold bg-gradient-to-r from-purple-400 to-primary text-gradient">MENT</span>
-                <span className="text-foreground/70"> (controle da MENTE)</span>
+                <span className="text-foreground/70"> (controle da </span>
+                <span className="font-bold bg-gradient-to-r from-purple-400 to-primary text-gradient">MENTE</span>
+                <span className="text-foreground/70">)</span>
               </p>
               <p>
                 <span className="text-foreground/70">Enter</span>
                 <span className="font-bold bg-gradient-to-r from-cyan-400 to-blue-500 text-gradient">TAIN</span>
-                <span className="text-foreground/70">ment (prender sua MENTE)</span>
+                <span className="text-foreground/70">ment (prender sua </span>
+                 <span className="font-bold bg-gradient-to-r from-purple-400 to-primary text-gradient">MENTE</span>
+                <span className="text-foreground/70">)</span>
               </p>
               <p>
                 <span className="text-foreground/70">Civil</span>
-                <span className="text-red-400 font-bold bg-gradient-to-r from-red-500 to-red-400 text-gradient">LIE</span>
-                <span className="text-foreground/70">zation (civil-MENTIRA-nação)</span>
+                <span className="font-bold bg-gradient-to-r from-red-500 to-red-400 text-gradient">LIE</span>
+                <span className="text-foreground/70">zation (civil-</span>
+                <span className="font-bold bg-gradient-to-r from-red-500 to-red-400 text-gradient">MENTIRA</span>
+                <span className="text-foreground/70">-nação)</span>
               </p>
            </div>
         </div>
