@@ -1,3 +1,94 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "symbol-carousel-1",
+      "description": "Carousel image showing mystical symbols",
+      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Captura-de-tela-2025-07-04-011214.png",
+      "imageHint": "mystical symbols"
+    },
+    {
+      "id": "symbol-carousel-2",
+      "description": "Carousel image showing mystical symbols",
+      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Captura-de-tela-2025-07-04-011601.png",
+      "imageHint": "ancient geometry"
+    },
+    {
+      "id": "symbol-carousel-3",
+      "description": "Carousel image showing mystical symbols",
+      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Captura-de-tela-2025-07-04-011624.png",
+      "imageHint": "eye pyramid"
+    },
+    {
+      "id": "symbol-carousel-4",
+      "description": "Carousel image showing mystical symbols",
+      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Captura-de-tela-2025-07-04-022636.png",
+      "imageHint": "zodiac wheel"
+    },
+    {
+      "id": "symbol-carousel-5",
+      "description": "Carousel image showing mystical symbols",
+      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Captura-de-tela-2025-07-04-05111858.png",
+      "imageHint": "alchemy symbols"
+    },
+    {
+      "id": "story-luminous-rock",
+      "description": "A luminous bio-organism rock, glowing with mystical energy.",
+      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Bio-organism-luminous-rock-2-150x150.png",
+      "imageHint": "glowing rock"
+    },
+    {
+      "id": "advantages-image",
+      "description": "Image illustrating the benefits of the book.",
+      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/4b6518757d69718f2e6488f9d917be90dada.png",
+      "imageHint": "person meditating"
+    },
+    {
+      "id": "social-proof-stars",
+      "description": "Star rating for social proof.",
+      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/10-mil-usuarios-300x50.png",
+      "imageHint": "star rating"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Customer testimonial screenshot.",
+      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/sdada-aaaa-a64a515a-768x894.jpg",
+      "imageHint": "customer review"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Customer testimonial screenshot.",
+      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/WhatsApp-Image-2025-07-04-at-15.04.jpg",
+      "imageHint": "customer message"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Customer testimonial screenshot.",
+      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/WhatsApp-Image-2025-07-04-at-15.05-2.jpg",
+      "imageHint": "happy customer"
+    },
+    {
+      "id": "book-content-mockup",
+      "description": "Mockup of the digital book 'O Portal da Mente'.",
+      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/mockup-livros-dsd.png",
+      "imageHint": "book mockup"
+    },
+    {
+      "id": "bonus-1-mockup",
+      "description": "Mockup for the first bonus book.",
+      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Mockup-Livrowewe-1267x2048.png",
+      "imageHint": "bonus book"
+    },
+    {
+      "id": "bonus-2-mockup",
+      "description": "Mockup for the second bonus, a cheatsheet.",
+      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Cheatsheet.png",
+      "imageHint": "cheatsheet bonus"
+    },
+    {
+      "id": "bonus-3-mockup",
+      "description": "Mockup for the third bonus, another cheatsheet.",
+      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Cheatsheet-dadad-214x300.png",
+      "imageHint": "guide bonus"
+    }
+  ]
 }
