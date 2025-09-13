@@ -9,7 +9,6 @@ import { BonusSection } from '@/components/landing/bonus';
 import { OfferSection } from '@/components/landing/offer';
 import { FaqSection } from '@/components/landing/faq';
 import { Footer } from '@/components/landing/footer';
-import { FloatingCta } from '@/components/landing/floating-cta';
 
 export default function Home() {
   return (
@@ -29,7 +28,6 @@ export default function Home() {
         <OfferSection />
         <FaqSection />
         <Footer />
-        <FloatingCta />
       </main>
     </div>
   );
