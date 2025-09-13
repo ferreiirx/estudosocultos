@@ -39,9 +39,11 @@ export function OfferSection() {
               ))}
             </ul>
           </div>
-          <CtaButton className="w-full text-2xl">
-            QUERO TER ACESSO!
-          </CtaButton>
+          <a href="https://pay.kirvano.com/06065cd0-04c2-424c-9b43-22da33267f86">
+            <CtaButton className="w-full text-2xl">
+              QUERO TER ACESSO!
+            </CtaButton>
+          </a>
           <div className="flex justify-around items-center mt-8 text-muted-foreground text-sm flex-wrap gap-4">
             <div className="flex items-center gap-2">
               <ShieldCheck className="h-5 w-5 text-primary/80" />
