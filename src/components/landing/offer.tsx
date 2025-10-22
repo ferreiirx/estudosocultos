@@ -41,7 +41,7 @@ export function OfferSection() {
           <div className="absolute -top-1/2 -right-1/2 w-full h-full rounded-full bg-primary/20 blur-[150px] -z-10"></div>
           <div className="absolute -bottom-1/2 -left-1/2 w-full h-full rounded-full bg-accent/20 blur-[150px] -z-10"></div>
           
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="flex flex-col gap-8 md:gap-12 items-center">
             <div>
               <h3 className="font-bold text-xl mb-4 text-primary flex items-center gap-2">
                 <Gift className="h-6 w-6"/>
@@ -58,7 +58,7 @@ export function OfferSection() {
               <p className="text-center text-xs mt-4 text-muted-foreground">Material em PDF. Receba imediatamente em seu e-mail.</p>
             </div>
             
-            <div className="text-center bg-background/50 p-6 rounded-lg border border-border">
+            <div className="text-center bg-background/50 p-6 rounded-lg border border-border w-full">
               <p className="text-muted-foreground text-xl line-through">Valor Total: R$149,50</p>
               <p className="text-foreground mt-4 font-semibold">PREÇO SOMENTE HOJE</p>
               <p className="text-accent my-2">
