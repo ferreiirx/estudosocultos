@@ -39,26 +39,8 @@ export function OfferSection() {
             ⏰ 80% DE DESCONTO HOJE
           </Badge>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center mt-8">
-            <div>
-              {offerImage && <Image src={offerImage.imageUrl} alt={offerImage.description} width={500} height={500} className="rounded-lg shadow-2xl" />}
-              <div className="bg-background/50 rounded-lg p-6 mt-8 border border-border">
-                <h3 className="font-bold text-lg mb-4 text-center text-primary flex items-center justify-center gap-2">
-                  <Gift className="h-6 w-6"/>
-                  Você vai receber:
-                </h3>
-                <ul className="space-y-3 text-sm">
-                  {includedItems.map(item => (
-                    <li key={item} className="flex items-start">
-                      <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-center text-xs mt-4 text-muted-foreground">Material em PDF. Receba imediatamente em seu e-mail.</p>
-              </div>
-            </div>
-            <div className="text-center bg-card/50 p-8 rounded-lg">
+          <div className="flex flex-col items-center gap-12 mt-12">
+            <div className="w-full max-w-lg text-center">
               <p className="text-muted-foreground text-xl line-through">Valor Total: R$149,50</p>
               <p className="text-foreground mt-4 font-semibold">PREÇO SOMENTE HOJE</p>
               <p className="text-accent my-2">
@@ -77,6 +59,25 @@ export function OfferSection() {
                   <ShieldCheck className="h-5 w-5 text-primary/80" />
                   <span>Compra Segura</span>
                 </div>
+              </div>
+            </div>
+
+            <div className="w-full max-w-lg">
+              {offerImage && <Image src={offerImage.imageUrl} alt={offerImage.description} width={500} height={500} className="rounded-lg shadow-2xl mx-auto" />}
+              <div className="bg-background/50 rounded-lg p-6 mt-8 border border-border">
+                <h3 className="font-bold text-lg mb-4 text-center text-primary flex items-center justify-center gap-2">
+                  <Gift className="h-6 w-6"/>
+                  Você vai receber:
+                </h3>
+                <ul className="space-y-3 text-sm">
+                  {includedItems.map(item => (
+                    <li key={item} className="flex items-start">
+                      <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-center text-xs mt-4 text-muted-foreground">Material em PDF. Receba imediatamente em seu e-mail.</p>
               </div>
             </div>
           </div>
