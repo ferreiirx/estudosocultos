@@ -59,7 +59,7 @@ export function OfferSection() {
             </div>
             
             <div className="text-center bg-background/50 p-6 rounded-lg border border-border w-full">
-              <p className="text-muted-foreground text-xl line-through">Valor Total: R$149,50</p>
+              <p className="text-destructive text-xl line-through">Valor Total: R$149,50</p>
               <p className="text-foreground mt-4 font-semibold">PREÇO SOMENTE HOJE</p>
               <p className="text-accent my-2">
                 <span className="text-4xl font-bold">5X</span>
