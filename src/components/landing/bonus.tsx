@@ -40,7 +40,7 @@ export function BonusSection() {
                   <CardDescription>{bonus.description}</CardDescription>
                 </CardContent>
                 <CardFooter className="justify-center p-4">
-                  <Badge variant="secondary">INCLUSO GRATUITAMENTE</Badge>
+                  <Badge variant="outline" className="border-green-500/30 bg-green-500/10 text-green-400">INCLUSO GRATUITAMENTE</Badge>
                 </CardFooter>
               </Card>
             );
