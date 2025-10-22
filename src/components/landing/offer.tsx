@@ -1,6 +1,6 @@
 import { CtaButton } from "./cta-button";
 import { Badge } from "@/components/ui/badge";
-import { Check, ShieldCheck } from "lucide-react";
+import { Check, Gift, ShieldCheck } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -32,17 +32,25 @@ export function OfferSection() {
           <h2 className="font-headline text-center text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent text-gradient">
             Sua Transformação Começa Agora
           </h2>
-          <p className="text-center text-lg text-muted-foreground mb-8">⏰ 80% DE DESCONTO HOJE</p>
+          <Badge
+            variant="secondary"
+            className="block text-center w-fit mx-auto text-base"
+          >
+            ⏰ 80% DE DESCONTO HOJE
+          </Badge>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-center mt-8">
             <div>
-              {offerImage && <Image src={offerImage.imageUrl} alt={offerImage.description} width={500} height={500} className="rounded-lg" />}
+              {offerImage && <Image src={offerImage.imageUrl} alt={offerImage.description} width={500} height={500} className="rounded-lg shadow-2xl" />}
               <div className="bg-background/50 rounded-lg p-6 mt-8 border border-border">
-                <h3 className="font-bold text-lg mb-4 text-center text-primary">Você vai receber:</h3>
-                <ul className="space-y-2 text-sm">
+                <h3 className="font-bold text-lg mb-4 text-center text-primary flex items-center justify-center gap-2">
+                  <Gift className="h-6 w-6"/>
+                  Você vai receber:
+                </h3>
+                <ul className="space-y-3 text-sm">
                   {includedItems.map(item => (
-                    <li key={item} className="flex items-center">
-                      <Check className="h-4 w-4 text-green-500 mr-2" />
+                    <li key={item} className="flex items-start">
+                      <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -50,9 +58,9 @@ export function OfferSection() {
                 <p className="text-center text-xs mt-4 text-muted-foreground">Material em PDF. Receba imediatamente em seu e-mail.</p>
               </div>
             </div>
-            <div className="text-center">
+            <div className="text-center bg-card/50 p-8 rounded-lg">
               <p className="text-muted-foreground text-xl line-through">Valor Total: R$149,50</p>
-              <p className="text-foreground mt-4">PREÇO SOMENTE HOJE</p>
+              <p className="text-foreground mt-4 font-semibold">PREÇO SOMENTE HOJE</p>
               <p className="text-accent my-2">
                 <span className="text-4xl font-bold">5X</span>
                 <span className="text-7xl font-bold">R$6,51</span>
@@ -65,7 +73,7 @@ export function OfferSection() {
                 </CtaButton>
               </a>
               <div className="flex justify-center items-center mt-6 text-muted-foreground text-sm">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 border border-border rounded-full px-4 py-2">
                   <ShieldCheck className="h-5 w-5 text-primary/80" />
                   <span>Compra Segura</span>
                 </div>

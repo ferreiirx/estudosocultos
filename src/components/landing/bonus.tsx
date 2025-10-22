@@ -22,7 +22,7 @@ export function BonusSection() {
     <section className="w-full py-24 md:py-32 bg-card/20">
       <div className="container mx-auto px-4 text-center">
         <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground mb-4 bg-gradient-to-r from-primary to-accent text-gradient">
-          <span className="text-foreground">🎁 </span>8 BÔNUS EXCLUSIVOS
+          <span className="text-foreground">🎁 </span>9 BÔNUS EXCLUSIVOS
         </h2>
         <p className="text-lg text-muted-foreground mb-12">
           O que você ganha HOJE
@@ -31,15 +31,15 @@ export function BonusSection() {
           {bonuses.map(bonus => {
             const image = bonusImages.find(img => img.id === bonus.id);
             return (
-              <Card key={bonus.id} className="bg-card/70 border-primary/20 hover:border-primary/50 transition-all duration-300 flex flex-col">
-                <CardHeader className="items-center">
+              <Card key={bonus.id} className="bg-card/70 border-primary/20 hover:border-primary/50 transition-all duration-300 flex flex-col text-center">
+                <CardHeader className="items-center p-4">
                   {image && <Image src={image.imageUrl} alt={bonus.title} width={250} height={250} data-ai-hint={image.imageHint} className="rounded-t-lg object-cover aspect-square"/>}
                 </CardHeader>
-                <CardContent className="flex-grow text-center">
+                <CardContent className="flex-grow p-4">
                   <CardTitle className="text-xl mb-2">{bonus.title}</CardTitle>
                   <CardDescription>{bonus.description}</CardDescription>
                 </CardContent>
-                <CardFooter className="justify-center">
+                <CardFooter className="justify-center p-4">
                   <Badge variant="secondary">INCLUSO GRATUITAMENTE</Badge>
                 </CardFooter>
               </Card>

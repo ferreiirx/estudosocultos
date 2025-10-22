@@ -1,9 +1,10 @@
-import { CheckCircle2 } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 export function AboutSection() {
   return (
     <section className="w-full py-24 md:py-32 bg-card/20">
       <div className="container mx-auto px-4 text-center max-w-4xl">
+        <Sparkles className="h-10 w-10 text-primary mx-auto mb-4" />
         <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground mb-6 bg-gradient-to-r from-primary to-accent text-gradient">
           O que é o Caderno de Cura com Ho’oponopono?
         </h2>

@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Carousel, CarouselContent, CarouselItem, useCarousel } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { cn } from '@/lib/utils';
+import { Quote } from 'lucide-react';
 
 const testimonials = [
   {
@@ -78,17 +79,18 @@ export function SocialProofSection() {
               stopOnMouseEnter: true,
             }),
           ]}
-          className="w-full max-w-4xl mx-auto"
+          className="w-full max-w-5xl mx-auto"
         >
-          <CarouselContent>
+          <CarouselContent className="-ml-4">
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <Card className="bg-card/70 text-left p-6 h-full flex flex-col border-none">
+              <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                <Card className="bg-card/70 text-left p-6 h-full flex flex-col border-none shadow-lg">
                   <CardContent className="p-0 flex flex-col flex-grow">
+                    <Quote className="w-8 h-8 text-primary/50 mb-4" />
                     <p className="text-muted-foreground mb-6 flex-grow">"{testimonial.quote}"</p>
                     <div className="flex items-center gap-4 mt-auto">
                       <Avatar>
-                        <AvatarFallback>{testimonial.avatar}</AvatarFallback>
+                        <AvatarFallback className="bg-primary/20 text-primary">{testimonial.avatar}</AvatarFallback>
                       </Avatar>
                       <div>
                         <p className="font-bold text-foreground">{testimonial.name}</p>

@@ -5,12 +5,22 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import { Sunrise, Droplets, Recycle, Diamond, Feather, type LucideIcon } from "lucide-react";
 
-const phases = [
+type Phase = {
+  phase: string;
+  title: string;
+  description: string;
+  items: string[];
+  icon: LucideIcon;
+}
+
+const phases: Phase[] = [
   {
     phase: "FASE 1",
     title: "DESPERTAR DA CONSCIÊNCIA",
     description: "Entenda o que te bloqueia, e prepare o terreno da cura.",
+    icon: Sunrise,
     items: [
       "Boas-vindas: criando seu espaço sagrado de transformação",
       "Como usar o Caderno",
@@ -26,6 +36,7 @@ const phases = [
     phase: "FASE 2",
     title: "LIMPEZA SUPERFICIAL",
     description: "Aliviando as dores do agora. Libere tensões visíveis e padrões recentes.",
+    icon: Droplets,
     items: [
       "Ativando palavras-gatilho com intenção de cura real",
       "Rituais diários para liberar cargas emocionais",
@@ -39,6 +50,7 @@ const phases = [
     phase: "FASE 3",
     title: "LIMPEZA RECORRENTE",
     description: "Curando padrões que se repetem. Acesse raízes profundas, traumas e feridas invisíveis.",
+    icon: Recycle,
     items: [
       "Cura da Criança Interior e Segurança Emocional",
       "Contratos emocionais inconscientes: por que você repete as mesmas histórias?",
@@ -53,6 +65,7 @@ const phases = [
     phase: "FASE 4",
     title: "LIMPEZA PROFUNDA",
     description: "Vibrando em uma nova frequência. Crie espaço para uma nova vibração em sua vida.",
+    icon: Diamond,
     items: [
       "Curando e desbloqueando os chakras",
       "Limpeza dos Chakras",
@@ -67,6 +80,7 @@ const phases = [
     phase: "FASE 5",
     title: "INTEGRAÇÃO E RENASCIMENTO",
     description: "Sua nova versão: mais leve, conectada e em paz.",
+    icon: Feather,
     items: [
       "Como manter o Método SLC e o Ho’oponopono no dia a dia",
       "O que fazer caso apareçam obstáculos, dúvidas e recaídas",
@@ -91,16 +105,18 @@ export function ProgramContentSection() {
           {phases.map((phase, index) => (
             <AccordionItem value={`item-${index}`} key={index} className="bg-card/50 rounded-lg border-primary/20 px-6">
               <AccordionTrigger className="text-lg text-left hover:no-underline">
-                <div className="flex flex-col md:flex-row md:items-center gap-4 text-left">
-                  <Badge variant="secondary" className="bg-primary/20 text-primary whitespace-nowrap h-fit">{phase.phase}</Badge>
-                  <div>
+                <div className="flex items-center gap-4 text-left w-full">
+                  <phase.icon className="h-8 w-8 text-primary flex-shrink-0" />
+                  <div className="flex-grow">
+                    <Badge variant="secondary" className="bg-primary/20 text-primary whitespace-nowrap h-fit mb-1">{phase.phase}</Badge>
                     <h3 className="font-bold text-xl text-foreground">{phase.title}</h3>
-                    <p className="text-sm text-muted-foreground font-normal">{phase.description}</p>
+                    <p className="text-sm text-muted-foreground font-normal hidden md:block">{phase.description}</p>
                   </div>
                 </div>
               </AccordionTrigger>
-              <AccordionContent className="text-base text-muted-foreground">
-                <ul className="list-decimal list-inside pl-5 space-y-2 mt-2">
+              <AccordionContent className="text-base text-muted-foreground pl-12">
+                 <p className="text-sm text-muted-foreground font-normal mb-4 md:hidden">{phase.description}</p>
+                <ul className="list-decimal list-inside space-y-2">
                   {phase.items.map((item, itemIndex) => (
                     <li key={itemIndex}>{item}</li>
                   ))}
@@ -109,11 +125,11 @@ export function ProgramContentSection() {
             </AccordionItem>
           ))}
         </Accordion>
-        <div className="text-center mt-12">
+        <div className="text-center mt-16">
           <h3 className="font-headline text-2xl md:text-3xl font-bold text-foreground">
             Transformação Completa em 5 Fases
           </h3>
-          <p className="text-lg text-muted-foreground mt-2">
+          <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
             Um método progressivo que te leva do sofrimento à liberdade, da confusão à clareza, da dor à paz interior duradoura.
           </p>
         </div>
