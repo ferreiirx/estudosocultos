@@ -1,12 +1,12 @@
 import { HeroSection } from '@/components/landing/hero';
-import { CuriositySection } from '@/components/landing/curiosity';
-import { SymbolCarousel } from '@/components/landing/symbol-carousel';
-import { StorySection } from '@/components/landing/story';
-import { AdvantagesSection } from '@/components/landing/advantages';
-import { SocialProofSection } from '@/components/landing/social-proof';
-import { BookContentSection } from '@/components/landing/book-content';
+import { AboutSection } from '@/components/landing/about';
+import { ForWhomSection } from '@/components/landing/for-whom';
+import { ContentCarouselSection } from '@/components/landing/content-carousel';
+import { ProgramContentSection } from '@/components/landing/program-content';
 import { BonusSection } from '@/components/landing/bonus';
 import { OfferSection } from '@/components/landing/offer';
+import { SocialProofSection } from '@/components/landing/social-proof';
+import { GuaranteeSection } from '@/components/landing/guarantee';
 import { FaqSection } from '@/components/landing/faq';
 import { Footer } from '@/components/landing/footer';
 
@@ -18,14 +18,14 @@ export default function Home() {
       </div>
       <main className="w-full">
         <HeroSection />
-        <CuriositySection />
-        <SymbolCarousel />
-        <StorySection />
-        <AdvantagesSection />
-        <SocialProofSection />
-        <BookContentSection />
+        <AboutSection />
+        <ForWhomSection />
+        <ContentCarouselSection />
+        <ProgramContentSection />
         <BonusSection />
         <OfferSection />
+        <SocialProofSection />
+        <GuaranteeSection />
         <FaqSection />
         <Footer />
       </main>

@@ -7,24 +7,28 @@ import {
 
 const faqs = [
   {
-    question: "Como vou recebê-lo?",
-    answer: "Imediatamente após o pagamento, você receberá automaticamente os detalhes de acesso em seu e-mail cadastrado em poucos minutos."
+    question: "Como vou receber o Caderno?",
+    answer: "Assim que seu pagamento for aprovado, você receberá em até 5 minutos um e-mail com o nome ImperiumPay para acessar nossa área de membros com todo conteúdo."
   },
   {
-    question: "Quanto tempo levará para receber meu acesso?",
-    answer: "Imediatamente. Assim que seu pagamento for aprovado, você receberá seus dados de login no e-mail de compra e poderá iniciar seus estudos imediatamente."
+    question: "Posso acessar o material pelo celular?",
+    answer: "Sim, e você consegue acessar todo material pelo celular, tablet ou computador."
   },
   {
-    question: "O pagamento é único?",
-    answer: "Sim! Pagamento único, sem custos adicionais."
+    question: "Tem garantia?",
+    answer: "Sim, queremos garantir o máximo sua satisfação, por isso oferecemos garantia de 30 dias."
   },
   {
-    question: "Onde entro em contato com o suporte?",
-    answer: "Você pode enviar uma mensagem para nosso suporte via Whatsapp."
+    question: "O Pagamento é seguro?",
+    answer: "Sim, o pagamento é processado e aprovado pela ImperiumPay, uma das maiores plataformas de infoprodutos."
   },
   {
-    question: "Posso imprimir meu livro?",
-    answer: "Sim, todo o nosso material é compatível com impressão."
+    question: "Não estou achando o e-mail com os dados de acesso, o que eu faço?",
+    answer: "As caixas de e-mail têm abas que distinguem os remetentes prioritários dos eventuais. O e-mail de acesso pode ter ido parar nessas caixas ou na caixa de spam (lixo eletrônico). Procure pelo remetente “ImperiumPay” para achar suas informações de acesso."
+  },
+  {
+    question: "Porque o Diário tem um valor tão baixo?",
+    answer: "A missão da produtora, bem como de sua equipe é levar um MATERIAL de QUALIDADE para o MAIOR número de pessoas possível para que todas elas consigam sair de uma vida estagnada e se CURAR para finalmente PROSPERAR. Entendemos que muitas pessoas que estão estagnadas não possuem condições financeiras para investir em cursos e mentorias."
   }
 ];
 
@@ -37,8 +41,8 @@ export function FaqSection() {
         </h2>
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, index) => (
-            <AccordionItem value={`item-${index}`} key={index}>
-              <AccordionTrigger className="text-lg text-left">{faq.question}</AccordionTrigger>
+            <AccordionItem value={`item-${index}`} key={index} className="border-b border-primary/20">
+              <AccordionTrigger className="text-lg text-left hover:no-underline">{faq.question}</AccordionTrigger>
               <AccordionContent className="text-base text-muted-foreground">
                 {faq.answer}
               </AccordionContent>

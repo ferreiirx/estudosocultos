@@ -39,6 +39,12 @@ const nextConfig: NextConfig = {
         hostname: 'fast.wistia.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.imgur.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

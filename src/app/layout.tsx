@@ -1,11 +1,10 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
-import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Mind Portal Landing',
-  description: 'Este livro revela conhecimentos que foram ocultos da humanidade por milênios...',
+  title: 'Caderno de Cura com Ho’oponopono',
+  description: 'Um espaço seguro para curar dores, romper ciclos e reencontrar sua paz interior.',
 };
 
 export default function RootLayout({

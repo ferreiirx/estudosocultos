@@ -1,94 +1,136 @@
 {
   "placeholderImages": [
     {
-      "id": "symbol-carousel-1",
-      "description": "Carousel image showing mystical symbols",
-      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Captura-de-tela-2025-07-04-011214.png",
-      "imageHint": "mystical symbols"
+      "id": "hero-book",
+      "description": "Mockup do Caderno de Cura com Ho'oponopono",
+      "imageUrl": "https://i.imgur.com/cyiR4MN.png",
+      "imageHint": "healing journal"
     },
     {
-      "id": "symbol-carousel-2",
-      "description": "Carousel image showing mystical symbols",
-      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Captura-de-tela-2025-07-04-011601.png",
-      "imageHint": "ancient geometry"
+      "id": "carousel-1",
+      "description": "Página interna do Caderno de Cura",
+      "imageUrl": "https://i.imgur.com/yV3OkWR.png",
+      "imageHint": "journal page"
     },
     {
-      "id": "symbol-carousel-3",
-      "description": "Carousel image showing mystical symbols",
-      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Captura-de-tela-2025-07-04-011624.png",
-      "imageHint": "eye pyramid"
+      "id": "carousel-2",
+      "description": "Página interna do Caderno de Cura",
+      "imageUrl": "https://i.imgur.com/SENuTzT.png",
+      "imageHint": "journal page"
     },
     {
-      "id": "symbol-carousel-4",
-      "description": "Carousel image showing mystical symbols",
-      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Captura-de-tela-2025-07-04-022636.png",
-      "imageHint": "zodiac wheel"
+      "id": "carousel-3",
+      "description": "Página interna do Caderno de Cura",
+      "imageUrl": "https://i.imgur.com/m4hdG61.png",
+      "imageHint": "journal page"
     },
     {
-      "id": "symbol-carousel-5",
-      "description": "Carousel image showing mystical symbols",
-      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Captura-de-tela-2025-07-04-05111858.png",
-      "imageHint": "alchemy symbols"
+      "id": "carousel-4",
+      "description": "Página interna do Caderno de Cura",
+      "imageUrl": "https://i.imgur.com/rPL2qrt.png",
+      "imageHint": "journal page"
     },
     {
-      "id": "story-luminous-rock",
-      "description": "A luminous bio-organism rock, glowing with mystical energy.",
-      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Bio-organism-luminous-rock-2-150x150.png",
-      "imageHint": "glowing rock"
+      "id": "carousel-5",
+      "description": "Página interna do Caderno de Cura",
+      "imageUrl": "https://i.imgur.com/Uy8S1Xa.png",
+      "imageHint": "journal page"
     },
     {
-      "id": "advantages-image",
-      "description": "Image illustrating the benefits of the book.",
-      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/4b6518757d69718f2e6488f9d917be90dada.png",
-      "imageHint": "person meditating"
+      "id": "carousel-6",
+      "description": "Página interna do Caderno de Cura",
+      "imageUrl": "https://i.imgur.com/ZtavvEq.png",
+      "imageHint": "journal page"
     },
     {
-      "id": "social-proof-stars",
-      "description": "Star rating for social proof.",
-      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/10-mil-usuarios-300x50.png",
-      "imageHint": "star rating"
+      "id": "carousel-7",
+      "description": "Página interna do Caderno de Cura",
+      "imageUrl": "https://i.imgur.com/CsfeAmH.png",
+      "imageHint": "journal page"
     },
     {
-      "id": "testimonial-1",
-      "description": "Customer testimonial screenshot.",
-      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/sdada-aaaa-a64a515a-768x894.jpg",
-      "imageHint": "customer review"
+      "id": "carousel-8",
+      "description": "Página interna do Caderno de Cura",
+      "imageUrl": "https://i.imgur.com/4NXCjmQ.png",
+      "imageHint": "journal page"
     },
     {
-      "id": "testimonial-2",
-      "description": "Customer testimonial screenshot.",
-      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/WhatsApp-Image-2025-07-04-at-15.04.jpg",
-      "imageHint": "customer message"
+      "id": "carousel-9",
+      "description": "Página interna do Caderno de Cura",
+      "imageUrl": "https://i.imgur.com/G8CzgtA.png",
+      "imageHint": "journal page"
     },
     {
-      "id": "testimonial-3",
-      "description": "Customer testimonial screenshot.",
-      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/WhatsApp-Image-2025-07-04-at-15.05-2.jpg",
-      "imageHint": "happy customer"
+      "id": "carousel-10",
+      "description": "Página interna do Caderno de Cura",
+      "imageUrl": "https://i.imgur.com/jfaXszP.png",
+      "imageHint": "journal page"
     },
     {
-      "id": "book-content-mockup",
-      "description": "Mockup of the digital book 'O Portal da Mente'.",
-      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/mockup-livros-dsd.png",
-      "imageHint": "book mockup"
+      "id": "bonus-1",
+      "description": "Bônus: Manual dos Arcanjos com Ho'oponopono",
+      "imageUrl": "https://i.imgur.com/FFSswuA.png",
+      "imageHint": "bonus ebook"
     },
     {
-      "id": "bonus-1-mockup",
-      "description": "Mockup for the first bonus book.",
-      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Mockup-Livrowewe-1267x2048.png",
-      "imageHint": "bonus book"
+      "id": "bonus-2",
+      "description": "Bônus: Cultivando Amor-Próprio com Ho'oponopono",
+      "imageUrl": "https://i.imgur.com/DZERWQU.png",
+      "imageHint": "bonus ebook"
     },
     {
-      "id": "bonus-2-mockup",
-      "description": "Mockup for the second bonus, a cheatsheet.",
-      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Cheatsheet.png",
-      "imageHint": "cheatsheet bonus"
+      "id": "bonus-3",
+      "description": "Bônus: Biodescodificador Emocional com Palavras-Gatilho",
+      "imageUrl": "https://i.imgur.com/CUTwFhu.png",
+      "imageHint": "bonus ebook"
     },
     {
-      "id": "bonus-3-mockup",
-      "description": "Mockup for the third bonus, another cheatsheet.",
-      "imageUrl": "https://sua-melhor-versao.com/imagens/Estudoscultos/Cheatsheet-dadad-214x300.png",
-      "imageHint": "guide bonus"
+      "id": "bonus-4",
+      "description": "Bônus: Caderno de Cura da Linhagem Familiar",
+      "imageUrl": "https://i.imgur.com/hPGwhTm.png",
+      "imageHint": "bonus ebook"
+    },
+    {
+      "id": "bonus-5",
+      "description": "Bônus: Mapa da Limpeza Energética dos Ambientes",
+      "imageUrl": "https://i.imgur.com/whDaxGg.png",
+      "imageHint": "bonus ebook"
+    },
+    {
+      "id": "bonus-6",
+      "description": "Bônus: Caixa de Oráculos – Palavras que Curam",
+      "imageUrl": "https://i.imgur.com/fqMMm75.png",
+      "imageHint": "oracle cards"
+    },
+    {
+      "id": "bonus-7",
+      "description": "Bônus: Diário dos 21 Ciclos de Limpeza e Autocura",
+      "imageUrl": "https://i.imgur.com/dsLMK5N.png",
+      "imageHint": "journal bonus"
+    },
+    {
+      "id": "bonus-8",
+      "description": "Bônus: Meditações Guiadas Ho'oponopono",
+      "imageUrl": "https://i.imgur.com/kIlbE2Y.png",
+      "imageHint": "meditation bonus"
+    },
+    {
+      "id": "bonus-9",
+      "description": "Bônus: Desenhos Terapêuticos para Colorir",
+      "imageUrl": "https://i.imgur.com/K3ZSugw.png",
+      "imageHint": "coloring book"
+    },
+    {
+      "id": "offer-image",
+      "description": "Imagem da oferta com todos os produtos",
+      "imageUrl": "https://i.imgur.com/rCWFr9z.png",
+      "imageHint": "product bundle"
+    },
+    {
+      "id": "guarantee-image",
+      "description": "Selo de garantia de 30 dias",
+      "imageUrl": "https://i.imgur.com/bY304aJ.png",
+      "imageHint": "guarantee seal"
     }
   ]
 }
