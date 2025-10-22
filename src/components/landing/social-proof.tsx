@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -26,41 +27,42 @@ const testimonials = [
   }
 ];
 
-function CarouselDots() {
-  const { api } = useCarousel();
-  const [scrollSnaps, setScrollSnaps] = React.useState<number[]>([]);
-  const [selectedIndex, setSelectedIndex] = React.useState(0);
-
-  React.useEffect(() => {
-    if (!api) return;
-    setScrollSnaps(api.scrollSnapList());
-    const onSelect = () => setSelectedIndex(api.selectedScrollSnap());
-    api.on("select", onSelect);
-    api.on("reInit", onSelect);
-    onSelect(); // Set initial state
-    return () => {
-      api.off("select", onSelect);
-    };
-  }, [api]);
-
-  return (
-    <div className="flex justify-center items-center gap-2 mt-8">
-      {scrollSnaps.map((_, index) => (
-        <button
-          key={index}
-          onClick={() => api?.scrollTo(index)}
-          className={cn(
-            "h-1.5 rounded-full transition-all duration-300",
-            index === selectedIndex ? "w-8 bg-primary" : "w-3 bg-primary/50"
-          )}
-          aria-label={`Ir para o slide ${index + 1}`}
-        />
-      ))}
-    </div>
-  );
-}
-
 export function SocialProofSection() {
+  
+  function CarouselDots() {
+    const { api } = useCarousel();
+    const [scrollSnaps, setScrollSnaps] = React.useState<number[]>([]);
+    const [selectedIndex, setSelectedIndex] = React.useState(0);
+
+    React.useEffect(() => {
+      if (!api) return;
+      setScrollSnaps(api.scrollSnapList());
+      const onSelect = () => setSelectedIndex(api.selectedScrollSnap());
+      api.on("select", onSelect);
+      api.on("reInit", onSelect);
+      onSelect(); // Set initial state
+      return () => {
+        api.off("select", onSelect);
+      };
+    }, [api]);
+
+    return (
+      <div className="flex justify-center items-center gap-2 mt-8">
+        {scrollSnaps.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => api?.scrollTo(index)}
+            className={cn(
+              "h-1.5 rounded-full transition-all duration-300",
+              index === selectedIndex ? "w-8 bg-primary" : "w-3 bg-primary/50"
+            )}
+            aria-label={`Ir para o slide ${index + 1}`}
+          />
+        ))}
+      </div>
+    );
+  }
+
   return (
     <section className="w-full py-24 md:py-32 bg-card/20">
       <div className="container mx-auto px-4 text-center">
@@ -72,15 +74,15 @@ export function SocialProofSection() {
           plugins={[
             Autoplay({
               delay: 4000,
-              stopOnInteraction: false, // Don't permanently stop on interaction
+              stopOnInteraction: false, 
               stopOnMouseEnter: true,
             }),
           ]}
           className="w-full max-w-4xl mx-auto"
         >
-          <CarouselContent className="-ml-4">
+          <CarouselContent>
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <Card className="bg-card/70 border-primary/20 text-left p-6 h-full flex flex-col">
                   <CardContent className="p-0 flex flex-col flex-grow">
                     <p className="text-muted-foreground mb-6 flex-grow">"{testimonial.quote}"</p>

@@ -37,9 +37,9 @@ export function ContentCarouselSection() {
           ]}
           className="w-full max-w-6xl mx-auto"
         >
-          <CarouselContent className="-ml-4">
+          <CarouselContent>
             {carouselImages.map((image) => (
-              <CarouselItem key={image.id} className="basis-full md:basis-1/2 lg:basis-1/3 pl-4">
+              <CarouselItem key={image.id} className="basis-full md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Image
                     src={image.imageUrl}
