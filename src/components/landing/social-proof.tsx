@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Carousel, CarouselContent, CarouselItem, useCarousel } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { cn } from '@/lib/utils';
@@ -83,7 +83,7 @@ export function SocialProofSection() {
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <Card className="bg-card/70 border-primary/20 text-left p-6 h-full flex flex-col">
+                <Card className="bg-card/70 text-left p-6 h-full flex flex-col border-none">
                   <CardContent className="p-0 flex flex-col flex-grow">
                     <p className="text-muted-foreground mb-6 flex-grow">"{testimonial.quote}"</p>
                     <div className="flex items-center gap-4 mt-auto">
